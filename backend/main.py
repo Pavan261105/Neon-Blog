@@ -8,6 +8,7 @@ app = FastAPI(title="Modern Blog API", version="1.0.0")
 origins = [
     "http://localhost:5173",
     "http://localhost:3000",
+    "*", # Allow all origins for production (Vercel)
 ]
 
 app.add_middleware(
